@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'luta';
+    src: url('../fontes/FIGHTT3_.ttf') format('truetype');
+    font-weight: normal;
+}
+
+:root {
+    --fonte-luta: 'luta', sans-serif;
+    --fonte-padrao: Arial, Helvetica, sans-serif; 
+    
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #2d3540c3;
+}
+
+header {
+    text-align: center;
+    background-image: linear-gradient(to bottom, #d92332, #8c1b24);
+    min-height: 150px;
+    padding-top: 35px;
+    border: 0px;
+}
+
+header h1 {
+    font-family: var(--fonte-luta);
+    font-size: 3em;
+    padding-bottom: 30px;
+    color: #2d3540;
+}
+
+header p {
+    color: rgba(255, 255, 255, 0.301);
+    font-size: 1.5em;
+    font-family: var(--fonte-padrao);
+    font-style: italic;
+}
+
+header nav {
+    text-align: left;
+    padding: 10px;
+}
+
+header a {
+    text-decoration: none;
+    padding: 5px 7px;
+    background-color: #2d3540;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+header a:hover {
+    background-color: white;
+    color: #2d3540;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 15px 0px;
+    background-color: whitesmoke;
+    margin: auto;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.275);
+}
+
+main h2 {
+    padding: 10px;
+    background-image: linear-gradient(to right, #d92332af, transparent);
+    font-family: var(--fonte-luta);
+    font-weight: 500;
+}
+
+main p {
+    margin: 15px;
+    font-size: 1em;
+    text-indent: 1.5cm;
+    line-height: 1.5em;
+    font-family: var(--fonte-padrao);
+    text-align: justify;
+    font-weight: 400;
+}
+
+div.divk {
+    text-align: center;
+}
+
+main img {
+    text-align: center;
+    margin: auto;
+}
+
+main img.imga {
+    width: 100%;
+}
+
+div.video {
+    background-color: #2d3540;
+    margin: 20px 0px 20px 0px;
+    padding: 20px;
+    padding-bottom: 56.5%;
+    position: relative;
+}
+
+div.video iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.274);
+    background-color: #2d3540d3;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    font-family: var(--fonte-padrao);
+    font-weight: 500;
+    color: white;
+}
+
+aside h2 {
+    background-color: var(--corver);
+    color: var(--cordourado);
+    padding: 10px;
+    margin: -10px -25px 0px -25px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside ul {
+    list-style-type: '\1F5F8\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+    font-weight: 400;
+    font-family: var(--fonte-padrao);
+}
+
+footer {
+    background-color: #2d3540;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cordourado);
+}
