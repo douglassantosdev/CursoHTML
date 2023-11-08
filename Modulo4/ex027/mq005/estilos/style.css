@@ -49,6 +49,7 @@ menu a {
     text-align: center;
     color: white;
     border-top: 2px solid gray;
+    border-radius: 5px;
 }
 
 menu a:hover {
