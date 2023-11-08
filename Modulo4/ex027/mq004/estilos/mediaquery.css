@@ -1,5 +1,68 @@
 @charset "UTF-8";
 
+
+/* Mobile devices – 320px — 480px.
+iPads, Tablets – 481px — 768px.
+Small screens, laptops – 769px — 1024px.
+Desktops, large screens – 1025px — 1200px.
+Extra large screens, TV – 1201px, and more. */
+
 @media print {
-    
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url(../imagens/back-print.jpg);
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita pelo Curso em Video';
+    }
+    img#phone {display: none;}
+    img#tv {display: none;}
+    img#print {display: block;}
+    img#tablet {display: none;}
+    img#pc {display: none;}
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        background: url(../imagens/back-tablet.jpg);
+    }
+    img#phone {display: none;}
+    img#tv {display: none;}
+    img#print {display: none;}
+    img#tablet {display: block;}
+    img#pc {display: none;}
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    body {
+        background: url(../imagens/back-pc.jpg);
+        
+    }
+    img#phone {display: none;}
+    img#tv {display: none;}
+    img#print {display: none;}
+    img#tablet {display: none;}
+    img#pc {display: block;}
+}
+
+@media screen and (min-width: 1201px) {
+    body {
+        background: url(../imagens/back-tv.jpg);
+    }
+    img#phone {display: none;}
+    img#tv {display: block;}
+    img#print {display: none;}
+    img#tablet {display: none;}
+    img#pc {display: none;}
+        
 }
